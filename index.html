@@ -66,7 +66,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="btn primary">Заказать услугу</button>
+          <button type="button" class="btn primary" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -141,25 +141,40 @@
           <h2 class="functions-title">Чем мы занимаемся</h2>
           <ul class="function-items">
             <li class="function-item">
-              <img
-                src="./images/workdesktop.jpg"
-                alt="Приложения для персональных компьютеров"
-                width="370"
-              />
+              <div class="product-thumb">
+                <img
+                  src="./images/workdesktop.jpg"
+                  alt="Приложения для персональных компьютеров"
+                  width="370"
+                />
+                <div class="product-overlay">
+                  <p class="product-lable">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="function-item">
-              <img
-                src="./images/workapp.jpg"
-                alt="Мобильные приложения"
-                width="370"
-              />
+              <div class="product-thumb">
+                <img
+                  src="./images/workapp.jpg"
+                  alt="Приложения для персональных компьютеров"
+                  width="370"
+                />
+                <div class="product-overlay">
+                  <p class="product-lable">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="function-item">
-              <img
-                src="./images/workdesign.jpg"
-                alt="Разработка дизайна"
-                width="370"
-              />
+              <div class="product-thumb">
+                <img
+                  src="./images/workdesign.jpg"
+                  alt="Приложения для персональных компьютеров"
+                  width="370"
+                />
+                <div class="product-overlay">
+                  <p class="product-lable">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -438,5 +453,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn-icon" width="11px" height="11px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
